@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>DIGIPAL - Your Digital Friend</title>
+	<style type="text/css">
+		*{margin: 0;padding: 0;box-sizing: border-box;}
+		html{font-family: 'DM Sans', sans-serif;}
+		img{width: 100%;height: auto;max-width: 100%;}
+		a{outline: 0;border: 0;text-decoration: none;color: #111;cursor: pointer;}
+		#menu{width: 100%;height: 100px;display: flex;align-items: center;flex-wrap: wrap;justify-content: space-between;padding: 0 50px;border-bottom: 1px solid rgba(0,0,0,.1);position: fixed;background: #fff;}
+		#menu img{width: 50px;}
+		#menu ul{display: flex;}
+		#menu ul li {padding: 0 15px;list-style: none;}
+		#menu ul li a.free{color: #B05A55;font-weight: bold;}
+		#menu ul li a.primary{background: #718D81;padding: 10px 15px;color: #fff;border-radius: 5px;}
+
+		#first{width: 100%;height: 100vh;background: #fff;display: flex;justify-content:center;align-items:center;}
+		#first #acc{width: 50%;margin: 100px 0 0;padding: 70px;}
+		#first #hero{width: 50%;padding: 0 50px;}
+		#first h1{font-size: 200%;margin-bottom: .625em;}
+		#first p{font-size: 100%;margin-bottom: 2em;}
+		#first a{background: #718D81;padding: 10px 15px;color: #fff;border-radius: 5px;}
+
+		#second{width: 100%;height: 100vh;background: #fff;padding: 50px;}
+		#second h1{text-align: center;margin-bottom: .625em;}
+		#second p.desc{text-align: center;margin-bottom: 2em;color: #11111180;}
+		#second #services{display: flex;align-items: center;flex-wrap: wrap;justify-content: space-between;max-width: 1000px;margin: 0 auto;}
+		#second #services a{width: 175px;height: 175px;padding: 0 15px;border-radius: 15px;display: flex;align-items: center;justify-content: center;text-align: center;flex-direction: column;}
+		#second #services a:nth-child(1){background: #718D81;color: #fff;}
+		#second #services a:nth-child(2){background: #F3D58F;}
+		#second #services a:nth-child(3){background: #B05A55;color: #fff;}
+		#second #services a:nth-child(4){background: #C4C4C4;}
+		#second #services a:nth-child(5){background: #78818B;color: #fff;}
+		#second #services a img{width: 50px;margin-bottom: 1em;}
+		#second .content div{display: none;background: #09c;width: 100%;max-width: 1000px;margin: 2em auto;border-radius: 15px;padding: 50px;transition: .3s all;align-content: space-between;justify-content: space-between;}
+		#second .content h2{margin-bottom: .625em;}
+		#second .content p{text-align: justify;margin-bottom: .4em;padding-right: 100px;}
+		#second .content img{width: 100px;}
+		#second .content #satu{display: flex;background: #718D81;color: #fff;}
+		#second .content #dua{background: #F3D58F;color: #111}
+		#second .content #tiga{background: #B05A55;color: #fff;}
+		#second .content #empat{background: #C4C4C4;color: #111;}
+		#second .content #lima{background: #78818B;color: #fff;}
+
+		#third{width: 100%;height: 50vh;display: flex;background: #B05A55;align-items: center;justify-content: center;flex-direction: column;}
+		#third h2{margin-bottom: 1.625em;color: #fff;}
+		#third section{}
+		#third section a{margin: 0 15px;}
+		#third section a img{width: 100px;height: 100px;background: #fff;padding: 10px;border-radius: 15px;}
+		#fourth{width: 100%;height: 100vh;max-height: 100vh;display: flex;background: #c4c4c4;align-items: center;justify-content: center;flex-direction: column;margin: 0 auto;}
+		#fourth h2{margin-bottom: 1.625em;color: #111;}
+		#fourth section {display: flex;text-align: center;justify-content: space-evenly;width: 100%;padding: 0 50px;margin-bottom: 2em;}
+		#fourth section a{}
+		#fourth section a img{width: 150px;background: #fff;border-radius: 50%;}
+		#fifth{}
+		#sixth{}
+		#seventh{}
+		#eighth{}
+		#ninth{}
+		#tenth{}
+		#footer{}
+	</style>
+</head>
+<body>
+<div id="menu">
+	<img src="digipal.png">
+	<div class="menu">
+		<ul>
+			<li><a href="#about">ABOUT</a></li>
+			<li><a href="#services">SERVICES</a></li>
+			<li><a href="#clients">CLIENTS</a></li>
+			<li><a href="#team">TEAM</a></li>
+			<li><a href="#pricing">PRICING</a></li>
+			<li><a href="#contact">CONTACT</a></li>
+			<li><a href="#freeaudit" class="free">FREE IG AUDIT</a></li>
+			<li><a href="#contact" class="primary">INQUIRE NOW</a></li>
+		</ul>
+	</div>
+</div>
+<div id="first">
+	<div id="hero">
+		<h1>Get help to grow your business online & support you all the way through :)</h1>
+		<p>DIGIPAL Bali is Digital Marketing based in Bali & Jakarta. We’re here to help your online marketing, boost your engagement, being your digital friend & make more money in your business 👌 </p>
+		<a href="#">INQUIRE NOW</a>
+	</div>
+	<div id="acc"><img src="demo.png"></div>
+</div>
+<div id="second">
+	<h1>Services</h1>
+	<p class="desc">At DIGIPAL Bali we do everything with passion and dedication. Scroll through our range of services and learn all about our areas of expertise.</p>
+	<div id="services">
+		<a onclick="tab1();"><img src="icons-solid.svg">Social Media Management</a>
+		<a onclick="tab2();"><img src="mail-bulk-solid.svg">Email Marketing</a>
+		<a onclick="tab3();"><img src="funnel-dollar-solid.svg">Paid Advertising</a>
+		<a onclick="tab4();"><img src="signature-solid.svg">Copywriting</a>
+		<a onclick="tab5();"><img src="pencil-ruler-solid.svg">Graphic Design</a>
+	</div>
+	<div class="content">
+		<div id="satu">
+			<section class="text">
+				<h2>Social Media Management</h2>
+				<p>Your social media pages are your digital profile telling their stories to your potential customers.</p>
+				<p>Let us help you create your perfect Instagram profile that are able to target your potential audience.</p>
+			</section>
+			<img src="icons-solid.svg">
+		</div>
+		<div id="dua">
+			<section class="text">
+				<h2>Email Marketing</h2>
+				<p>Remind your regular customers about yourself Creating databases of potential customers and informing them about your business will incredibly boost your turnover.</p>
+			</section>
+			<img src="mail-bulk-solid.svg">
+		</div>
+		<div id="tiga">
+			<section class="text">
+				<h2>Paid Advertising</h2>
+				<p>Reach every potential customer even in the furthest corners of social networks.</p>
+			</section>
+			<img src="funnel-dollar-solid.svg">
+		</div>
+		<div id="empat">
+			<section class="text">
+				<h2>Copywriting</h2>
+				<p>Copywriting is more than just words strung together to show people what your business is about Good copywriting should reflect the values that your business holds close. While creating a lasting impact on the customers, eventually driving them to engoge in the action you want them to.</p>
+			</section>
+			<img src="signature-solid.svg">
+		</div>
+		<div id="lima">
+			<section class="text">
+				<h2>Graphic Design</h2>
+				<p>Let our professionals create visual content to communicate the right messages to your customers.</p>
+			</section>
+			<img src="pencil-ruler-solid.svg">
+		</div>
+	</div>
+</div>
+<div id="third">
+	<h2>Portfolio</h2>
+	<section>
+		<a href="livingstone.html"><img src="digipal.png"></a>
+		<a href="livingstone.html"><img src="digipal.png"></a>
+		<a href="livingstone.html"><img src="digipal.png"></a>
+		<a href="livingstone.html"><img src="digipal.png"></a>
+		<a href="livingstone.html"><img src="digipal.png"></a>
+		<a href="livingstone.html"><img src="digipal.png"></a>
+	</section>
+</div>
+<div id="fourth">
+	<h2>Team</h2>
+	<section>
+		<a href="livingstone.html">
+			<img src="2.jpg">
+			<h3>Marchia Griseldis Sylvana</h3>
+			<p>Managing Director</p>
+		</a>
+	</section>
+	<section>
+		<a href="livingstone.html">
+			<img src="2.jpg">
+			<h3>Sufi Adenda</h3>
+			<p>Social Media Admin</p>
+		</a>
+		<a href="livingstone.html">
+			<img src="4.jpg">
+			<h3>Wira</h3>
+			<p>Social Media Admin</p>
+		</a>
+		<a href="livingstone.html">
+			<img src="2.jpg">
+			<h3>Aqshal Tata</h3>
+			<p>Social Media Admin</p>
+		</a>
+		<a href="livingstone.html">
+			<img src="4.jpg">
+			<h3>Putu Dera Ananta</h3>
+			<p>Desainer</p>
+		</a>
+		<a href="livingstone.html">
+			<img src="2.jpg">
+			<h3>I Gede Roni Anggara</h3>
+			<p>Desainer</p>
+		</a>
+	</section>
+</div>
+<script type="text/javascript">
+	function tab1() {
+	  var a = document.getElementById("satu");
+	  var b = document.getElementById("dua");
+	  var c = document.getElementById("tiga");
+	  var d = document.getElementById("empat");
+	  var e = document.getElementById("lima");
+	  if (a.style.display === "none") {
+	    a.style.display = "flex";
+	    b.style.display = "none";
+	    c.style.display = "none";
+	    d.style.display = "none";
+	    e.style.display = "none";
+	  } else {
+	  }
+	}
+	function tab2() {
+	  var a = document.getElementById("satu");
+	  var b = document.getElementById("dua");
+	  var c = document.getElementById("tiga");
+	  var d = document.getElementById("empat");
+	  var e = document.getElementById("lima");
+	  if (b.style.display === "none") {
+	    a.style.display = "none";
+	    b.style.display = "flex";
+	    c.style.display = "none";
+	    d.style.display = "none";
+	    e.style.display = "none";
+	  } else {
+	    b.style.display = "none";
+	    a.style.display = "flex";
+	  }
+	}
+	function tab3() {
+	  var a = document.getElementById("satu");
+	  var b = document.getElementById("dua");
+	  var c = document.getElementById("tiga");
+	  var d = document.getElementById("empat");
+	  var e = document.getElementById("lima");
+	  if (c.style.display === "none") {
+	    a.style.display = "none";
+	    b.style.display = "none";
+	    c.style.display = "flex";
+	    d.style.display = "none";
+	    e.style.display = "none";
+	  } else {
+	    c.style.display = "none";
+	    a.style.display = "flex";
+	  }
+	}
+	function tab4() {
+	  var a = document.getElementById("satu");
+	  var b = document.getElementById("dua");
+	  var c = document.getElementById("tiga");
+	  var d = document.getElementById("empat");
+	  var e = document.getElementById("lima");
+	  if (d.style.display === "none") {
+	    a.style.display = "none";
+	    b.style.display = "none";
+	    c.style.display = "none";
+	    d.style.display = "flex";
+	    e.style.display = "none";
+	  } else {
+	    d.style.display = "none";
+	    a.style.display = "flex";
+	  }
+	}
+	function tab5() {
+	  var a = document.getElementById("satu");
+	  var b = document.getElementById("dua");
+	  var c = document.getElementById("tiga");
+	  var d = document.getElementById("empat");
+	  var e = document.getElementById("lima");
+	  if (e.style.display === "none") {
+	    a.style.display = "none";
+	    b.style.display = "none";
+	    c.style.display = "none";
+	    d.style.display = "none";
+	    e.style.display = "flex";
+	  } else {
+	    e.style.display = "none";
+	    a.style.display = "flex";
+	  }
+	}
+</script>
+</body>
+</html>
